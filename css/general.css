@@ -106,7 +106,7 @@ button {
   box-shadow: 0 0 4rem 0.2rem var(--primary);
 }
 .cards:hover {
-  box-shadow: 0 0 2rem var(--primary);
+  box-shadow: 0 0 2rem #680aff51;
 }
 .nav-links:hover {
   color: var(--primary);
