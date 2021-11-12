@@ -4,12 +4,8 @@ const menu = function () {
   const l2 = document.querySelector(".l2");
   const l3 = document.querySelector(".l3");
   const nav = document.querySelector("nav");
+  const list = document.querySelector(".nav-list");
   let flag = 0;
-  const cancel = function () {
-    l2.classList.remove("l2-active");
-    l3.classList.remove("l3-active");
-    nav.classList.remove("nav-active");
-  };
 
   const logocolor = function (color) {
     document.querySelector("logo").style.fill = "color";
@@ -22,14 +18,17 @@ const menu = function () {
       nav.classList.toggle("nav-active");
       flag = 1;
     } else if (flag === 1) {
-      cancel();
+      l2.classList.remove("l2-active");
+      l3.classList.remove("l3-active");
+      nav.classList.remove("nav-active");
       document.querySelector(".nav-list").style.display = "none";
       flag = 0;
-      console.log(`${flag}`);
     }
   });
-  nav.addEventListener(".click", function () {
-    cancel();
+  list.addEventListener("click", function () {
+    l2.classList.remove("l2-active");
+    l3.classList.remove("l3-active");
+    nav.classList.remove("nav-active");
     document.querySelector(".nav-list").style.display = "none";
   });
 };
