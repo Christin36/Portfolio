@@ -1,0 +1,122 @@
+:root {
+  --primary: #690aff;
+  --bg: #2a272e;
+  --palewhitenav: #f9f9f9;
+  --accentwhite: #f4f3f7;
+  --lightblackcard: #37323e;
+  --darkblackcard: #1d1825;
+  --accentblue10: #ece1fd;
+  --accentblue20: #e4e0eb;
+}
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  overflow-x: hidden;
+  background: var(--bg);
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+button {
+  border: none;
+  background: none;
+}
+
+/* //////////////////////////////////Styles */
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+.semibold {
+  font-weight: 600;
+}
+.bold {
+  font-weight: 700;
+}
+.fs16 {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.fs18 {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+.fs21 {
+  font-size: 2.1rem;
+  line-height: 2.8rem;
+}
+.fs24 {
+  font-size: 2.4rem;
+  line-height: 3.2rem;
+}
+.fs32 {
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+}
+.fs48 {
+  font-size: 4.8rem;
+  line-height: 6.4rem;
+}
+/* ///////////////Specials */
+.primaryHeading {
+  font-size: 8rem;
+  line-height: 9.6rem;
+}
+.cta {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-weight: 700;
+}
+.heading {
+  color: var(--palewhitenav);
+}
+.accent-blue {
+  color: #ece1fd;
+}
+/* ///////////////////////////////////////////////style */
+.container {
+  margin: 0 auto;
+  max-width: 80vw;
+}
+.hidden {
+  visibility: hidden;
+}
+.icons-footer a:hover,
+.contact-icons a:hover {
+  border-radius: 10rem;
+  box-shadow: 0 0 2rem 0.4rem var(--primary);
+}
+.cta:hover {
+  box-shadow: 0 0 4rem 0.2rem var(--primary);
+}
+.cards:hover {
+  box-shadow: 0 0 2rem var(--primary);
+}
+.nav-links:hover {
+  color: var(--primary);
+}
+.nav-cta:hover {
+  color: var(--bg);
+}
+.l2-active {
+  width: 3.2rem !important;
+}
+.l3-active {
+  width: 2.4rem !important;
+}
