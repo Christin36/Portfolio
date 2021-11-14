@@ -21,10 +21,11 @@ const menu = function () {
       l2.classList.remove("l2-active");
       l3.classList.remove("l3-active");
       nav.classList.remove("nav-active");
-      document.querySelector(".nav-list").style.display = "none";
+      // document.querySelector(".nav-list").style.display = "none";
       flag = 0;
     }
   });
+
   list.addEventListener("click", function () {
     l2.classList.remove("l2-active");
     l3.classList.remove("l3-active");
@@ -32,4 +33,11 @@ const menu = function () {
     document.querySelector(".nav-list").style.display = "none";
   });
 };
-menu();
+const vw = screen.width;
+console.log(`${vw}`);
+if (vw <= 960) {
+  document.querySelector(".nav-list").style.display = "none";
+  menu();
+} else if (vw > 960) {
+  document.querySelector(".nav-list").style.display = "flex";
+}
